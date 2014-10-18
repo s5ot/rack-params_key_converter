@@ -5,11 +5,11 @@ require 'rack/params_key_converter/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rack-params_key_converter"
-  spec.version       = Rack::ParamsKeyConverter::VERSION
+  spec.version       = "0.0.1"
   spec.authors       = ["sogo.ohta"]
   spec.email         = ["sogo.ohta@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = "Rails app's params converter between JS app and Rails"
+  spec.description   = 'This is a rack middleware that convert params key between JavaScript app and Rails app.'
   spec.homepage      = "https://github.com/s5ot/rack-params_key_converter"
   spec.license       = "MIT"
 
