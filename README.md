@@ -2,6 +2,31 @@
 
 This is a rack middleware that convert params key between JavaScript app and Rails app.
 
+For example, your JavaScript app posts below JSON (camelized key),
+```json
+{ "userName": " Jotaro Kujo",
+  "createdAt": "1989-03-18T09:45:00.000Z"
+}
+```
+And your rails app receive params as underscored key
+```ruby
+puts params[:user_name] # "Jotaro Kujo"
+puts params[:created_at] # "1989-03-18T09:45:00.000Z"
+```
+
+Your rails app's response as below (underscored key),
+```json
+{ "user_name": "Noriaki Kakyoin",
+  "created_at": "1989-03-18T09:45:00.000Z"
+}
+```json
+And JavaScript app receive as camelized key.
+```json
+{ "userName": "Noriaki Kakyoin",
+  "createdAt": "1989-03-18T09:45:00.000Z"
+}
+```json
+
 ## Installation
 
 Add this line to your application's Gemfile:
