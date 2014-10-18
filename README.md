@@ -22,7 +22,7 @@ Or install it yourself as:
 
 Add below to your rails app's config/initializers
 ```ruby
-Rails.configuration.middleware.insert_after(ActionDispatch::ParamsParser,  ParamsKeyConverter)
+Rails.configuration.middleware.insert_after(ActionDispatch::ParamsParser, Rack::ParamsKeyConverter)
 ```
 
 ## Contributing
