@@ -1,4 +1,3 @@
-require "rack/params_key_converter/version"
 require "active_support"
 require "json"
 
