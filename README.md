@@ -1,6 +1,6 @@
 # Rack::ParamsKeyConverter
 
-TODO: Write a gem description
+This is a rack middleware that convert params key between JavaScript app and Rails app.
 
 ## Installation
 
@@ -20,7 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add below to your rails app's config/initializers
+```ruby
+Rails.configuration.middleware.insert_after(ActionDispatch::ParamsParser,  ParamsKeyConverter)
+```
 
 ## Contributing
 
@@ -29,3 +32,7 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+## LiCENSE
+
+MIT
