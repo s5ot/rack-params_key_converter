@@ -8,7 +8,7 @@ For example, your JavaScript app posts below JSON (camelized key),
   "createdAt": "1989-03-18T09:45:00.000Z"
 }
 ```
-And your rails app receive params as underscored key
+And your rails app can receive params as underscored key
 ```ruby
 puts params[:user_name] # "Jotaro Kujo"
 puts params[:created_at] # "1989-03-18T09:45:00.000Z"
@@ -20,7 +20,7 @@ Your rails app's response as below (underscored key),
   "created_at": "1989-03-18T09:45:00.000Z"
 }
 ```
-And JavaScript app receive as camelized key.
+And JavaScript app can receive as camelized key.
 ```json
 { "userName": "Noriaki Kakyoin",
   "createdAt": "1989-03-18T09:45:00.000Z"
